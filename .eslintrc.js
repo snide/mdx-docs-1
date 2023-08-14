@@ -1,6 +1,12 @@
 /* eslint-env node */
 module.exports = {
-  extends: ['eslint:recommended', 'prettier', 'plugin:mdx/recommended', 'plugin:prettier/recommended'],
+  extends: [
+    'eslint:recommended',
+    'prettier',
+    'plugin:mdx/recommended',
+    'plugin:prettier/recommended',
+    'plugin:react/recommended'
+  ],
   parserOptions: {
     ecmaVersion: 2015
   },
