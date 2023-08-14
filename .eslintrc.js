@@ -1,6 +1,11 @@
 /* eslint-env node */
 module.exports = {
-  extends: ['eslint:recommended', 'prettier', 'plugin:mdx/recommended', 'plugin:prettier/recommended'],
+  extends: [
+    'eslint:recommended',
+    'prettier',
+    'plugin:mdx/recommended',
+    'plugin:prettier/recommended'
+  ],
   parserOptions: {
     ecmaVersion: 2015
   },
@@ -10,6 +15,7 @@ module.exports = {
   },
   ignorePatterns: ['node_modules/', 'package.json', 'pnpm-lock.yaml'],
   rules: {
-    'react/jsx-no-undef': 'off'
+    'react/jsx-no-undef': 'off',
+    'no-unused-vars': 'warn'
   }
 };

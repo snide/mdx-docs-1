@@ -657,28 +657,9 @@ with `xata.db.Posts.filter({ slug: params.slug }).getFirst()`.
 Finally, we added full-text fuzzy search functionality to the landing page, leveraging Xata's automatic table
 indexing. The search used a `q` query string and the auto-generated `xata.db.Posts.search` function.
 
-## Learn more
+import LearnMore from '_includes/learn-more.mdx';
 
-If you enjoyed this guide, you could continue working on improving the application. Here are some suggestions:
-
-- Add [pagination](https://xata.io/docs/typescript-client/get#paginating-results) for the blog post listing
-- Add [pagination](https://xata.io/docs/typescript-client/search#pagination) for blog post search results
-- Handle single post view page not finding a result for a `slug`
-- Add a `body` field to the database schema to contain the full text of the blog post and update the single page view to
-  use that new field.
-- Move common code from the two pages into `src/app/layout.tsx` or reusable components.
-
-You can also explore some of the features we've covered in more detail:
-
-- [Getting records](https://xata.io/docs/typescript-client/get)
-- [Filtering records](https://xata.io/docs/typescript-client/filtering)
-- [Searching records](https://xata.io/docs/typescript-client/search)
-
-Or dive into some of Xata's more advanced features, such as:
-
-- [Aggregations](https://xata.io/docs/typescript-client/aggregate)
-- [Transactions](https://xata.io/docs/typescript-client/transaction)
-- [Vector search](https://xata.io/docs/typescript-client/vector-search)
+<LearnMore />
 
 [0]: https://app.xata.io
 [1]: https://app.xata.io/settings
